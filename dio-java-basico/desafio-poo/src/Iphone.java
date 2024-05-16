@@ -1,4 +1,4 @@
-public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorNaInternet {
+public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
 
     public void tocar(){
         System.out.println("TOCANDO");
