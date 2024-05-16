@@ -1,48 +1,37 @@
 public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorNaInternet {
 
-    private String musica;
-    
     public void tocar(){
-        System.out.printf("TOCANDO: %s\n", musica);
+        System.out.println("TOCANDO");
     }
 
     public void pausar(){
-        System.out.println("MÙSICA PAUSADA");
+        System.out.println("MÚSICA PAUSADA");
     }
-    public void selecionarMusica(){
-        System.out.println();;
+    public void selecionarMusica(String musica){
+        System.out.printf("MUSICA SELECIONADA: %s\n", musica);;
     }
 
-    public void ligar(){
-        System.out.println();
+    public void ligar(String numero){
+        System.out.printf("LIGANDO PARA: %s\n", numero);
     }
 
     public void atender(){
-        System.out.println();
+        System.out.println("ATENDENDO");
     }
 
     public void iniciarCorreioVoz(){
-        System.out.println();
+        System.out.println("DEIXE SEU RECADO");
     }
 
-    public void exibirPagina(){
-        System.out.println();
+    public void exibirPagina(String url){
+        System.out.printf("EXIBINDO: %s\n", url);
     }
 
     public void adicionarAba(){
-        System.out.println();
+        System.out.println("ABA ADICIONADA");
     }
     public void atualizarPagina(){
-        System.out.println();
+        System.out.println("ATUALIZANDO A PÁGINA");
     }
-
-    public String getMusica(){
-        return musica;
-    }
-
-    public void setMusica(String musica) {
-        this.musica = musica;
-    }
-
 
 }
